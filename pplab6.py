@@ -1,32 +1,31 @@
 class Para:
     def __init__(self):
         self.open=[]
-        self.close=[]
+        self.i=None
     def checkvalid(self,str):
         valid=False
         for each in str:
             if each == '(' or each=='{' or each== '[':
                 self.open.append(each)
-            elif each == ')' or each =='}' or each ==']' :
-                self.close.append(each)
-        print(self.open)
-        print(self.close)
-        if( len(self.open) != len(self.close)):
-             valid = False
-        else:
-            for i in range (len(self.open)):
-                    
-                if self.open[i]=='(' and self.close[i]==')':
-                     valid=True 
-                elif self.open[i]=='{' and self.close[i]=='}':
-                     valid=True
-                elif self.open[i]=='[' and self.close[i]==']':
-                     valid = True
+               # print("list",self.open)
+            elif each == ')' or each=='}' or each== ']':
+                if len(self.open) !=0 :
+                    self.i = self.open.pop()
+                   # print("poped",self.i)
                 else:
-                    valid = False
-
+                    self.i=None
+                if each == ')' and  self.i == '(':
+                    valid=True
+                elif each == '}' and  self.i=='{':
+                    valid =True
+                elif each == ']' and  self.i =='[':
+                    valid = True
+                else:
+                    valid =False
+       # if len(self.open) !=0 :
+         #    valid =False
         if(valid):
-            print("valid...")
+            print("valid string...")
         else:
             print("Invalid String...")
 
