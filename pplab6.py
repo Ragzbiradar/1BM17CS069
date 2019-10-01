@@ -22,8 +22,8 @@ class Para:
                     valid = True
                 else:
                     valid =False
-       # if len(self.open) !=0 :
-         #    valid =False
+        if len(self.open) !=0 :
+            valid =False
         if(valid):
             print("valid string...")
         else:
