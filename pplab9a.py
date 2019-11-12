@@ -49,17 +49,17 @@ class Application(Frame):
 		self.movieselect3 = BooleanVar()
 		Label(self,text="Choose Movies:").grid(row=5,column=0,columnspan=2,sticky=W)
 		if self.language.get()=="English":
-			Checkbutton(self,variable= self.movieselect1,text="joker").grid(row=6,column=0,sticky=W)
-			Checkbutton(self,variable= self.movieselect2,text="Endgame").grid(row=7,column=0,sticky=W)
-			Checkbutton(self,variable= self.movieselect3,text="avengers").grid(row=8,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect1,text="joker      ").grid(row=6,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect2,text="Endgame    ").grid(row=7,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect3,text="avengers    ").grid(row=8,column=0,sticky=W)
 		if self.language.get()=="Kannada":
-			Checkbutton(self,variable= self.movieselect1,text="KGF").grid(row=6,column=0,sticky=W)
-			Checkbutton(self,variable= self.movieselect2,text="bell bottom").grid(row=7,column=0,sticky=W)
-			Checkbutton(self,variable= self.movieselect3,text="Kirik party").grid(row=8,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect1,text="KGF            ").grid(row=6,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect2,text="bell bottom   ").grid(row=7,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect3,text="Kirik party  ").grid(row=8,column=0,sticky=W)
 		if self.language.get()=="Hindi":
-			Checkbutton(self,variable= self.movieselect1,text="War").grid(row=6,column=0,sticky=W)
-			Checkbutton(self,variable= self.movieselect2,text="bala").grid(row=7,column=0,sticky=W)
-			Checkbutton(self,variable= self.movieselect3,text="Chicchore").grid(row=8,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect1,text="War          ").grid(row=6,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect2,text="bala         ").grid(row=7,column=0,sticky=W)
+			Checkbutton(self,variable= self.movieselect3,text="Chicchore     ").grid(row=8,column=0,sticky=W)
 			
 
 
